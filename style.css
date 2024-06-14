@@ -126,7 +126,7 @@ body {
   margin-top: 1rem;
 }
 
-.pass-setting .options .option {
+.pass-settings .options .option {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
@@ -149,7 +149,7 @@ body {
 
 .options .option label {
   cursor: pointer;
-  color: #4f4343;
+  color: #4f4f4f;
   padding-left: 0.63rem;
 }
 
@@ -173,13 +173,13 @@ body {
 }
 
 /* responsive*/
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 390px) {
   .container {
-    width: 360px;
+    width: 340px;
   }
 
   .container h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .wrapper {
@@ -187,7 +187,7 @@ body {
   }
 
   .input-box input {
-    height: 50px;
+    height: 48px;
     font-size: 1rem;
     font-weight: 450;
     border-radius: 3px;
