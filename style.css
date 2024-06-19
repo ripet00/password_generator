@@ -102,7 +102,7 @@ body {
 
 .pass-indicator#strong::before {
   width: 100%;
-  scroll-padding-block-start: #43a047;
+  background: #43a047;
 }
 
 .wrapper.pass-length {
