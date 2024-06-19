@@ -18,14 +18,14 @@ const generatePassword = () => {
   let staticPassword = "";
   let randomPassword = "";
   let excludeDuplicate = false;
-  let passLength = lengthSlider.Value;
+  let passLength = lengthSlider.value;
 
   // Looping untuk ulangi setiap option
   options.forEach((option) => {
     if (option.checked) {
       if (option.id !== "exc-duplicate" && option.id !== "spaces") {
         //Menambahkan characters staticPassword jika setiap optiondipilih
-        staticPassword += characters[opttion.id];
+        staticPassword += characters[option.id];
       } else if (option.id == "spaces") {
         // menambahkan space jika dipilih
         staticPassword += `${staticPassword}`;
@@ -82,10 +82,10 @@ updateSlider();
 const copyPassword = () => {
   navigator.clipboard.writeText(passwordInput.value);
   copyIcon.innerText = "check";
-  copyIcon.computedStyleMap.color = "#4285f4";
+  copyIcon.style.color = "#4285f4";
   setTimeout(() => {
     copyIcon.innerText = "copy_all";
-    copyIcon.computedStyleMap.color = "#707070";
+    copyIcon.style.color = "#707070";
   }, 1500);
 };
 
